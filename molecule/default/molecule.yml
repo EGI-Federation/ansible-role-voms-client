@@ -13,7 +13,7 @@ lint: |
   ansible-lint --force-color
   flake8 --config .github/linters/.flake8
 platforms:
-  - name: voms-clients-almalinux9
+  - name: voms-client-almalinux9
     image: quay.io/egi/umd5:almalinux9
 provisioner:
   name: ansible

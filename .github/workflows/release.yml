@@ -40,13 +40,13 @@ jobs:
           ANSIBLE_FORCE_COLOR: "1"
           PY_COLORS: "1"
 
-      # Access is managed at https://quay.io/repository/egi/umd5?tab=settings
+      # Access is managed at https://quay.io/repository/egi/voms-client?tab=settings
       # Credentials for the robot account can be retrieved there
       # TODO: look into pushing some description
       # https://github.com/marketplace/actions/update-container-description-action
       - name: Publish image to Quay
         run: |
-          docker commit voms-client quay.io/egi/voms-client:${{ matrix.os }}
+          docker commit voms-client-${{ matrix.os }} quay.io/egi/voms-client:${{ matrix.os }}
           echo "${{ secrets.QUAY_REGISTRY_PASSWORD }}" | docker login -u="egi+egi_github" --password-stdin quay.io
           docker push quay.io/egi/voms-client:${{ matrix.os }}
 
