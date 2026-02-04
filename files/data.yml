@@ -1,496 +1,859 @@
+---
 data:
-- name: alice
-  voms:
-  - DN: /DC=ch/DC=cern/OU=computers/CN=alice-auth.web.cern.ch
-    CA_DN: /DC=ch/DC=cern/CN=CERN Grid Certification Authority
-    hostname: voms-alice-auth.app.cern.ch
-    port: '443'
-- name: ams02.cern.ch
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms2.cnaf.infn.it
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: voms2.cnaf.infn.it
-    port: '15008'
-- name: astron
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=NL/ST=Utrecht/O=SURF B.V./CN=voms1.grid.surfsara.nl
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: voms.grid.sara.nl
-    port: '30013'
-- name: atlas
-  voms:
-  - DN: /DC=ch/DC=cern/OU=computers/CN=atlas-auth.web.cern.ch
-    CA_DN: /DC=ch/DC=cern/CN=CERN Grid Certification Authority
-    hostname: voms-atlas-auth.app.cern.ch
-    port: '443'
-- name: belle
-  voms:
-  - DN: /C=JP/ST=Ibaraki/L=Tsukuba/O=High Energy Accelerator Research Organization/CN=voms.cc.kek.jp
-    CA_DN: /C=JP/O="SECOM Trust Systems CO.,LTD."/CN=NII Open Domain CA - G7 RSA
-    hostname: voms.cc.kek.jp
-    port: '15020'
-- name: biomed
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=FR/ST=Paris/O=Centre national de la recherche scientifique/CN=cclcgvomsli01.in2p3.fr
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: cclcgvomsli01.in2p3.fr
-    port: '15000'
-- name: camont
-  voms:
-  - DN: /C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk
-    CA_DN: /C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B
-    hostname: voms.gridpp.ac.uk
-    port: '15025'
-- name: cms
-  voms:
-  - DN: /DC=ch/DC=cern/OU=computers/CN=cms-auth.web.cern.ch
-    CA_DN: /DC=ch/DC=cern/CN=CERN Grid Certification Authority
-    hostname: voms-cms-auth.app.cern.ch
-    port: '443'
-- name: dteam
-  voms:
-  - DN: /DC=ch/DC=cern/OU=computers/CN=dteam-auth.web.cern.ch
-    CA_DN: /DC=ch/DC=cern/CN=CERN Grid Certification Authority
-    hostname: voms-dteam-auth.app.cern.ch
-    port: '443'
-- name: enmr.eu
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms2.cnaf.infn.it
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: voms2.cnaf.infn.it
-    port: '15014'
-- name: glast.org
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms2.cnaf.infn.it
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: voms2.cnaf.infn.it
-    port: '15018'
-- name: gridpp
-  voms:
-  - DN: /C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk
-    CA_DN: /C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B
-    hostname: voms.gridpp.ac.uk
-    port: '15000'
-- name: iber.vo.ibergrid.eu
-  voms:
-  - DN: /C=PT/ST=Lisboa/O="LIP-Lab De Instrumentacao e Fis Expe de Particulas, Ass.Par.A i"/CN=voms01.ncg.ingrid.pt
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT OV RSA CA 4
-    hostname: voms01.ncg.ingrid.pt
-    port: '40003'
-- name: infngrid
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms-01.pd.infn.it
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: voms-01.pd.infn.it
-    port: '15000'
-  - DN: /DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms.cnaf.infn.it
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: voms.cnaf.infn.it
-    port: '15000'
-- name: lhcb
-  voms:
-  - DN: /DC=ch/DC=cern/OU=computers/CN=lhcb-auth.web.cern.ch
-    CA_DN: /DC=ch/DC=cern/CN=CERN Grid Certification Authority
-    hostname: voms-lhcb-auth.app.cern.ch
-    port: '443'
-- name: lofar
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=NL/ST=Utrecht/O=SURF B.V./CN=voms1.grid.surfsara.nl
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: voms.grid.sara.nl
-    port: '30019'
-- name: moldyngrid
-  voms:
-  - DN: /DC=org/DC=ugrid/O=hosts/O=KNU/CN=voms.grid.org.ua
-    CA_DN: /DC=org/DC=ugrid/CN=UGRID CA G2
-    hostname: voms.grid.org.ua
-    port: '15110'
-- name: ops
-  voms:
-  - DN: /DC=ch/DC=cern/OU=computers/CN=ops-auth.web.cern.ch
-    CA_DN: /DC=ch/DC=cern/CN=CERN Grid Certification Authority
-    hostname: voms-ops-auth.app.cern.ch
-    port: '443'
-- name: pamela
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms-01.pd.infn.it
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: voms-01.pd.infn.it
-    port: '15013'
-  - DN: /DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms.cnaf.infn.it
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: voms.cnaf.infn.it
-    port: '15013'
-- name: pheno
-  voms:
-  - DN: /C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk
-    CA_DN: /C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B
-    hostname: voms.gridpp.ac.uk
-    port: '15011'
-- name: pvier
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=NL/ST=Utrecht/O=SURF B.V./CN=voms1.grid.surfsara.nl
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: voms.grid.sara.nl
-    port: '30000'
-- name: snoplus.snolab.ca
-  voms:
-  - DN: /C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk
-    CA_DN: /C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B
-    hostname: voms.gridpp.ac.uk
-    port: '15503'
-- name: t2k.org
-  voms:
-  - DN: /C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk
-    CA_DN: /C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B
-    hostname: voms.gridpp.ac.uk
-    port: '15003'
-- name: tut.vo.ibergrid.eu
-  voms:
-  - DN: /C=PT/ST=Lisboa/O="LIP-Lab De Instrumentacao e Fis Expe de Particulas, Ass.Par.A i"/CN=voms01.ncg.ingrid.pt
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT OV RSA CA 4
-    hostname: voms01.ncg.ingrid.pt
-    port: '40002'
-- name: virgo
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms-01.pd.infn.it
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: voms-01.pd.infn.it
-    port: '15009'
-  - DN: /DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms.cnaf.infn.it
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: voms.cnaf.infn.it
-    port: '15009'
-- name: vo.agata.org
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=FR/ST=Paris/O=Centre national de la recherche scientifique/CN=cclcgvomsli01.in2p3.fr
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: cclcgvomsli01.in2p3.fr
-    port: '15007'
-- name: vo.complex-systems.eu
-  voms:
-  - DN: /C=GR/O=HellasGrid/OU=hellasgrid.gr/CN=voms2.hellasgrid.gr
-    CA_DN: /C=GR/O=HellasGrid/OU=Certification Authorities/CN=HellasGrid CA 2016
-    hostname: voms2.hellasgrid.gr
-    port: '15160'
-- name: vo.cs.br
-  voms:
-  - DN: /C=BR/O=ANSP/OU=ANSPGrid CA/OU=Services/CN=voms.cat.cbpf.br
-    CA_DN: /C=BR/O=ANSP/OU=ANSPGrid CA/CN=ANSPGrid CA
-    hostname: voms.cat.cbpf.br
-    port: '15001'
-- name: vo.cta.in2p3.fr
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=FR/ST=Paris/O=Centre national de la recherche scientifique/CN=cclcgvomsli01.in2p3.fr
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: cclcgvomsli01.in2p3.fr
-    port: '15008'
-- name: vo.formation.idgrilles.fr
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=FR/ST=Paris/O=Centre national de la recherche scientifique/CN=cclcgvomsli01.in2p3.fr
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: cclcgvomsli01.in2p3.fr
-    port: '15012'
-- name: vo.grand-est.fr
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=FR/ST=Paris/O=Centre national de la recherche scientifique/CN=grid12.lal.in2p3.fr
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: grid12.lal.in2p3.fr
-    port: '20018'
-- name: vo.grif.fr
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=FR/ST=Paris/O=Centre national de la recherche scientifique/CN=grid12.lal.in2p3.fr
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: grid12.lal.in2p3.fr
-    port: '20001'
-- name: vo.helio-vo.eu
-  voms:
-  - DN: /C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk
-    CA_DN: /C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B
-    hostname: voms.gridpp.ac.uk
-    port: '15506'
-- name: vo.hess-experiment.eu
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=FR/ST=Paris/O=Centre national de la recherche scientifique/CN=grid12.lal.in2p3.fr
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: grid12.lal.in2p3.fr
-    port: '20021'
-- name: vo.irfu.cea.fr
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=FR/ST=Paris/O=Centre national de la recherche scientifique/CN=grid12.lal.in2p3.fr
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: grid12.lal.in2p3.fr
-    port: '20014'
-- name: vo.llr.in2p3.fr
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=FR/ST=Paris/O=Centre national de la recherche scientifique/CN=grid12.lal.in2p3.fr
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: grid12.lal.in2p3.fr
-    port: '20007'
-- name: vo.metacentrum.cz
-  voms:
-  - DN: /DC=cz/DC=cesnet-ca/O=CESNET/CN=voms2.grid.cesnet.cz
-    CA_DN: /DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4
-    hostname: voms2.grid.cesnet.cz
-    port: '15007'
-- name: vo.northgrid.ac.uk
-  voms:
-  - DN: /C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk
-    CA_DN: /C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B
-    hostname: voms.gridpp.ac.uk
-    port: '15018'
-- name: vo.sbg.in2p3.fr
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=FR/ST=Paris/O=Centre national de la recherche scientifique/CN=grid12.lal.in2p3.fr
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: grid12.lal.in2p3.fr
-    port: '20006'
-- name: vo.scotgrid.ac.uk
-  voms:
-  - DN: /C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk
-    CA_DN: /C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B
-    hostname: voms.gridpp.ac.uk
-    port: '15509'
-- name: vo.southgrid.ac.uk
-  voms:
-  - DN: /C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk
-    CA_DN: /C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B
-    hostname: voms.gridpp.ac.uk
-    port: '15019'
-- name: vo.france-grilles.fr
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=FR/ST=Paris/O=Centre national de la recherche scientifique/CN=cclcgvomsli01.in2p3.fr
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: cclcgvomsli01.in2p3.fr
-    port: '15017'
-- name: xenon.biggrid.nl
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=NL/ST=Utrecht/O=SURF B.V./CN=voms1.grid.surfsara.nl
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: voms.grid.sara.nl
-    port: '30008'
-- name: mice
-  voms:
-  - DN: /C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk
-    CA_DN: /C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B
-    hostname: voms.gridpp.ac.uk
-    port: '15001'
-- name: icarus-exp.org
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=vomsmania.cnaf.infn.it
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: vomsmania.cnaf.infn.it
-    port: '15000'
-- name: na62.vo.gridpp.ac.uk
-  voms:
-  - DN: /C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk
-    CA_DN: /C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B
-    hostname: voms.gridpp.ac.uk
-    port: '15501'
-- name: comet.j-parc.jp
-  voms:
-  - DN: /C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk
-    CA_DN: /C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B
-    hostname: voms.gridpp.ac.uk
-    port: '15505'
-- name: fedcloud.egi.eu
-  voms:
-  - DN: /DC=cz/DC=cesnet-ca/O=CESNET/CN=voms1.grid.cesnet.cz
-    CA_DN: /DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4
-    hostname: voms1.grid.cesnet.cz
-    port: '15002'
-- name: lsst
-  voms:
-  - DN: /DC=org/DC=incommon/C=US/ST=California/O=Stanford University/CN=voms.slac.stanford.edu
-    CA_DN: /C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3
-    hostname: voms.slac.stanford.edu
-    port: '15003'
-- name: hyperk.org
-  voms:
-  - DN: /C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk
-    CA_DN: /C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B
-    hostname: voms.gridpp.ac.uk
-    port: '15510'
-- name: cernatschool.org
-  voms:
-  - DN: /C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk
-    CA_DN: /C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B
-    hostname: voms.gridpp.ac.uk
-    port: '15500'
-  - DN: /C=UK/O=eScience/OU=Oxford/L=OeSC/CN=voms02.gridpp.ac.uk
-    CA_DN: /C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B
-    hostname: voms02.gridpp.ac.uk
-    port: '15500'
-- name: projects.nl
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=NL/ST=Utrecht/O=SURF B.V./CN=voms1.grid.surfsara.nl
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: voms.grid.sara.nl
-    port: '30028'
-- name: eiscat.se
-  voms:
-  - DN: /DC=cz/DC=cesnet-ca/O=CESNET/CN=voms1.grid.cesnet.cz
-    CA_DN: /DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4
-    hostname: voms1.grid.cesnet.cz
-    port: '15005'
-  - DN: /DC=cz/DC=cesnet-ca/O=CESNET/CN=voms2.grid.cesnet.cz
-    CA_DN: /DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4
-    hostname: voms2.grid.cesnet.cz
-    port: '15005'
-- name: demo.fedcloud.egi.eu
-  voms:
-  - DN: /DC=cz/DC=cesnet-ca/O=CESNET/CN=voms1.grid.cesnet.cz
-    CA_DN: /DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4
-    hostname: voms1.grid.cesnet.cz
-    port: '15008'
-- name: eli-np.eu
-  voms:
-  - DN: /DC=RO/DC=RomanianGRID/O=IFIN-HH/CN=tbit02.nipne.ro
-    CA_DN: /DC=RO/DC=RomanianGRID/O=ROSA/OU=Certification Authority/CN=RomanianGRID
-      CA
-    hostname: tbit02.nipne.ro
-    port: '15003'
-- name: fermilab
-  voms:
-  - DN: /DC=org/DC=incommon/C=US/ST=Illinois/O=Fermi Research Alliance/CN=voms1.fnal.gov
-    CA_DN: /C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3
-    hostname: voms1.fnal.gov
-    port: '15001'
-  - DN: /DC=org/DC=incommon/C=US/ST=Illinois/O=Fermi Research Alliance/CN=voms2.fnal.gov
-    CA_DN: /C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3
-    hostname: voms2.fnal.gov
-    port: '15001'
-- name: gridifin.ro
-  voms:
-  - DN: /DC=RO/DC=RomanianGRID/O=IFIN-HH/CN=tbit02.nipne.ro
-    CA_DN: /DC=RO/DC=RomanianGRID/O=ROSA/OU=Certification Authority/CN=RomanianGRID
-      CA
-    hostname: tbit02.nipne.ro
-    port: '15005'
-- name: juno
-  voms:
-  - DN: /C=CN/O=HEP/OU=CC/O=IHEP/CN=voms.ihep.ac.cn
-    CA_DN: /C=CN/O=HEP/CN=Institute of High Energy Physics Certification Authority
-    hostname: voms.ihep.ac.cn
-    port: '15008'
-- name: ronbio.ro
-  voms:
-  - DN: /DC=RO/DC=RomanianGRID/O=IFIN-HH/CN=tbit02.nipne.ro
-    CA_DN: /DC=RO/DC=RomanianGRID/O=ROSA/OU=Certification Authority/CN=RomanianGRID
-      CA
-    hostname: tbit02.nipne.ro
-    port: '15004'
-- name: vo.dirac.ac.uk
-  voms:
-  - DN: /C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk
-    CA_DN: /C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B
-    hostname: voms.gridpp.ac.uk
-    port: '15002'
-- name: lz
-  voms:
-  - DN: /C=UK/O=eScience/OU=Oxford/L=OeSC/CN=voms02.gridpp.ac.uk
-    CA_DN: /C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B
-    hostname: voms02.gridpp.ac.uk
-    port: '15517'
-- name: vo.elixir-europe.org
-  voms:
-  - DN: /DC=cz/DC=cesnet-ca/O=CESNET/CN=voms1.grid.cesnet.cz
-    CA_DN: /DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4
-    hostname: voms1.grid.cesnet.cz
-    port: '15032'
-- name: vo.nbis.se
-  voms:
-  - DN: /DC=cz/DC=cesnet-ca/O=CESNET/CN=voms1.grid.cesnet.cz
-    CA_DN: /DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4
-    hostname: voms1.grid.cesnet.cz
-    port: '15033'
-- name: skatelescope.eu
-  voms:
-  - DN: /C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk
-    CA_DN: /C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B
-    hostname: voms.gridpp.ac.uk
-    port: '15512'
-- name: vo.indigo-datacloud.eu
-  voms:
-  - DN: /C=PT/ST=Lisboa/O="LIP-Lab De Instrumentacao e Fis Expe de Particulas, Ass.Par.A i"/CN=voms01.ncg.ingrid.pt
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT OV RSA CA 4
-    hostname: voms01.ncg.ingrid.pt
-    port: '40101'
-- name: dune
-  voms:
-  - DN: /DC=org/DC=incommon/C=US/ST=Illinois/O=Fermi Research Alliance/CN=voms1.fnal.gov
-    CA_DN: /C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3
-    hostname: voms1.fnal.gov
-    port: '15042'
-  - DN: /DC=org/DC=incommon/C=US/ST=Illinois/O=Fermi Research Alliance/CN=voms2.fnal.gov
-    CA_DN: /C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3
-    hostname: voms2.fnal.gov
-    port: '15042'
-- name: vo.padme.org
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms2.cnaf.infn.it
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: voms2.cnaf.infn.it
-    port: '15020'
-- name: solidexperiment.org
-  voms:
-  - DN: /C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk
-    CA_DN: /C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B
-    hostname: voms.gridpp.ac.uk
-    port: '15513'
-- name: vo.emsodev.eu
-  voms:
-  - DN: /C=GR/O=HellasGrid/OU=hellasgrid.gr/CN=voms2.hellasgrid.gr
-    CA_DN: /C=GR/O=HellasGrid/OU=Certification Authorities/CN=HellasGrid CA 2016
-    hostname: voms2.hellasgrid.gr
-    port: '15020'
-- name: vo.nextgeoss.eu
-  voms:
-  - DN: /DC=cz/DC=cesnet-ca/O=CESNET/CN=voms1.grid.cesnet.cz
-    CA_DN: /DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4
-    hostname: voms1.grid.cesnet.cz
-    port: '15036'
-- name: ericll.org
-  voms:
-  - DN: /DC=cz/DC=cesnet-ca/O=CESNET/CN=voms1.grid.cesnet.cz
-    CA_DN: /DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4
-    hostname: voms1.grid.cesnet.cz
-    port: '15039'
-- name: vo.clarin.eu
-  voms:
-  - DN: /DC=cz/DC=cesnet-ca/O=CESNET/CN=voms1.grid.cesnet.cz
-    CA_DN: /DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4
-    hostname: voms1.grid.cesnet.cz
-    port: '15040'
-  - DN: /DC=cz/DC=cesnet-ca/O=CESNET/CN=voms2.grid.cesnet.cz
-    CA_DN: /DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4
-    hostname: voms2.grid.cesnet.cz
-    port: '15040'
-- name: muoncoll.infn.it
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms-02.pd.infn.it
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: voms-02.pd.infn.it
-    port: '15022'
-  - DN: /DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms2.cnaf.infn.it
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: voms2.cnaf.infn.it
-    port: '15022'
-- name: mug2ej.kek.jp
-  voms:
-  - DN: /C=JP/ST=Ibaraki/L=Tsukuba/O=High Energy Accelerator Research Organization/CN=voms.cc.kek.jp
-    CA_DN: /C=JP/O="SECOM Trust Systems CO.,LTD."/CN=NII Open Domain CA - G7 RSA
-    hostname: voms.cc.kek.jp
-    port: '15024'
-- name: vo.usegalaxy.eu
-  voms:
-  - DN: /DC=cz/DC=cesnet-ca/O=CESNET/CN=voms1.grid.cesnet.cz
-    CA_DN: /DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4
-    hostname: voms1.grid.cesnet.cz
-    port: '15038'
-- name: xlzd.biggrid.nl
-  voms:
-  - DN: /DC=org/DC=terena/DC=tcs/C=NL/ST=Utrecht/O=SURF B.V./CN=voms1.grid.surfsara.nl
-    CA_DN: /C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4
-    hostname: voms.grid.sara.nl
-    port: '30008'
+  - name: alice
+    voms:
+      - DN: "/DC=ch/DC=cern/OU=computers/CN=alice-auth.cern.ch"
+        CA_DN: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority"
+        hostname: "voms-alice-auth.cern.ch"
+        port: "443"
+  - name: ams02.cern.ch
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/L=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms2.cnaf.infn.it"
+        CA_DN: "/C=GR/O=Hellenic Academic and Research Institutions CA/CN=GEANT TLS RSA 1"
+        hostname: "voms2.cnaf.infn.it"
+        port: "15008"
+  - name: apesci
+    voms:
+      - DN: "/C=TW/O=AS/OU=GRID/CN=voms.grid.sinica.edu.tw"
+        CA_DN: "/C=TW/O=AS/CN=Academia Sinica Grid Computing Certification Authority Mercury"
+        hostname: "voms.grid.sinica.edu.tw"
+        port: "15011"
+  - name: argo
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms.cnaf.infn.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms.cnaf.infn.it"
+        port: "15012"
+  - name: astro.vo.eu-egee.org
+    voms:
+      - DN: "/O=GRID-FR/C=FR/O=CNRS/OU=LAL/CN=grid12.lal.in2p3.fr"
+        CA_DN: "/C=FR/O=MENESR/OU=GRID-FR/CN=AC GRID-FR Services"
+        hostname: "grid12.lal.in2p3.fr"
+        port: "20012"
+  - name: astron
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=NL/ST=Utrecht/O=SURF B.V./CN=voms1.grid.surfsara.nl"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms.grid.sara.nl"
+        port: "30013"
+  - name: atlas
+    voms:
+      - DN: "/DC=ch/DC=cern/OU=computers/CN=lcg-voms2.cern.ch"
+        CA_DN: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority"
+        hostname: "lcg-voms2.cern.ch"
+        port: "15001"
+      - DN: "/DC=ch/DC=cern/OU=computers/CN=voms2.cern.ch"
+        CA_DN: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority"
+        hostname: "voms2.cern.ch"
+        port: "15001"
+  - name: belle
+    voms:
+      - DN: "/C=JP/O=KEK/OU=CRC/CN=voms.cc.kek.jp"
+        CA_DN: "/C=JP/O=KEK/OU=CRC/CN=KEK GRID Certificate Authority2024"
+        hostname: "voms.cc.kek.jp"
+        port: "15020"
+      - DN: "/C=JP/O=KEK/OU=CRC/CN=belle-auth.cc.kek.jp"
+        CA_DN: "/C=JP/O=KEK/OU=CRC/CN=KEK GRID Certificate Authority2024"
+        hostname: "belle-auth.cc.kek.jp"
+  - name: bg-edu.grid.acad.bg
+    voms:
+      - DN: "/DC=bg/DC=acad/O=hosts/O=IICT-BAS/OU=GTA/CN=voms.ipp.acad.bg"
+        CA_DN: "/DC=bg/DC=acad/CN=BG.ACAD CA"
+        hostname: "voms.ipp.acad.bg"
+        port: "15002"
+  - name: biomed
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=FR/L=Paris/O=Centre national de la recherche scientifique/CN=voms-biomed.ijclab.in2p3.fr"
+        CA_DN: "/C=GR/O=Hellenic Academic and Research Institutions CA/CN=GEANT TLS RSA 1"
+        hostname: "voms-biomed.ijclab.in2p3.fr"
+        port: "443"
+  - name: calice
+    voms:
+      - DN: "/C=DE/O=GermanGrid/OU=DESY/CN=host/grid-voms.desy.de"
+        CA_DN: "/C=DE/O=GermanGrid/CN=GridKa-CA"
+        hostname: "grid-voms.desy.de"
+        port: "15102"
+  - name: camont
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15025"
+  - name: cdf
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms.cnaf.infn.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms.cnaf.infn.it"
+        port: "15001"
+  - name: cesga
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=ES/L=Santiago de Compostela/O=Centro de Supercomputacion de Galicia - CESGA/CN=voms2.egi.cesga.es "
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms2.egi.cesga.es"
+        port: "15110"
+  - name: cms
+    voms:
+      - DN: "/DC=ch/DC=cern/OU=computers/CN=cms-auth.cern.ch"
+        CA_DN: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority"
+        hostname: "voms-cms-auth.cern.ch"
+        port: "443"
+  - name: compchem
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms-01.pd.infn.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms-01.pd.infn.it"
+        port: "15003"
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms.cnaf.infn.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms.cnaf.infn.it"
+        port: "15003"
+  - name: comput-er.it
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms-02.pd.infn.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms-02.pd.infn.it"
+        port: "15007"
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/L=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms2.cnaf.infn.it"
+        CA_DN: "/C=GR/O=Hellenic Academic and Research Institutions CA/CN=GEANT TLS RSA 1"
+        hostname: "voms2.cnaf.infn.it"
+        port: "15007"
+  - name: dech
+    voms:
+      - DN: "/C=DE/O=GermanGrid/OU=Fraunhofer SCAI/CN=host/glite-io.scai.fraunhofer.de"
+        CA_DN: "/C=DE/O=GermanGrid/CN=GridKa-CA"
+        hostname: "glite-io.scai.fraunhofer.de"
+        port: "15000"
+  - name: desy
+    voms:
+      - DN: "/C=DE/O=GermanGrid/OU=DESY/CN=host/grid-voms.desy.de"
+        CA_DN: "/C=DE/O=GermanGrid/CN=GridKa-CA"
+        hostname: "grid-voms.desy.de"
+        port: "15104"
+  - name: dteam
+    voms:
+      - DN: "/C=GR/O=HellasGrid/OU=hellasgrid.gr/CN=voms2.hellasgrid.gr"
+        CA_DN: "/C=GR/O=HellasGrid/OU=Certification Authorities/CN=HellasGrid CA 2016"
+        hostname: "voms2.hellasgrid.gr"
+        port: "15004"
+  - name: enea
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms-01.pd.infn.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms-01.pd.infn.it"
+        port: "15005"
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms.cnaf.infn.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms.cnaf.infn.it"
+        port: "15005"
+  - name: enmr.eu
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/L=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms2.cnaf.infn.it"
+        CA_DN: "/C=GR/O=Hellenic Academic and Research Institutions CA/CN=GEANT TLS RSA 1"
+        hostname: "voms2.cnaf.infn.it"
+        port: "15014"
+  - name: esr
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=NL/ST=Utrecht/O=SURF B.V./CN=voms1.grid.surfsara.nl"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms.grid.sara.nl"
+        port: "30001"
+  - name: euasia.euasiagrid.org
+    voms:
+      - DN: "/C=TW/O=AS/OU=GRID/CN=voms.grid.sinica.edu.tw"
+        CA_DN: "/C=TW/O=AS/CN=Academia Sinica Grid Computing Certification Authority Mercury"
+        hostname: "voms.grid.sinica.edu.tw"
+        port: "15015"
+  - name: euchina
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/L=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms2.cnaf.infn.it"
+        CA_DN: "/C=GR/O=Hellenic Academic and Research Institutions CA/CN=GEANT TLS RSA 1"
+        hostname: "voms2.cnaf.infn.it"
+        port: "15017"
+  - name: euindia
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/L=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms2.cnaf.infn.it"
+        CA_DN: "/C=GR/O=Hellenic Academic and Research Institutions CA/CN=GEANT TLS RSA 1"
+        hostname: "voms2.cnaf.infn.it"
+        port: "15010"
+  - name: eumed
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/L=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms2.cnaf.infn.it"
+        CA_DN: "/C=GR/O=Hellenic Academic and Research Institutions CA/CN=GEANT TLS RSA 1"
+        hostname: "voms2.cnaf.infn.it"
+        port: "15016"
+  - name: fusion
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=ES/L=Santiago de Compostela/O=Centro de Supercomputacion de Galicia - CESGA/CN=voms2.egi.cesga.es "
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms2.egi.cesga.es"
+        port: "15001"
+  - name: geant4
+    voms:
+      - DN: "/DC=ch/DC=cern/OU=computers/CN=voms2.cern.ch"
+        CA_DN: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority"
+        hostname: "voms2.cern.ch"
+        port: "15007"
+  - name: ghep
+    voms:
+      - DN: "/C=DE/O=GermanGrid/OU=DESY/CN=host/grid-voms.desy.de"
+        CA_DN: "/C=DE/O=GermanGrid/CN=GridKa-CA"
+        hostname: "grid-voms.desy.de"
+        port: "15105"
+  - name: glast.org
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/L=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms2.cnaf.infn.it"
+        CA_DN: "/C=GR/O=Hellenic Academic and Research Institutions CA/CN=GEANT TLS RSA 1"
+        hostname: "voms2.cnaf.infn.it"
+        port: "15018"
+  - name: gridit
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms-01.pd.infn.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms-01.pd.infn.it"
+        port: "15008"
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms.cnaf.infn.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms.cnaf.infn.it"
+        port: "15008"
+  - name: gridpp
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15000"
+  - name: hermes
+    voms:
+      - DN: "/C=DE/O=GermanGrid/OU=DESY/CN=host/grid-voms.desy.de"
+        CA_DN: "/C=DE/O=GermanGrid/CN=GridKa-CA"
+        hostname: "grid-voms.desy.de"
+        port: "15108"
+  - name: hone
+    voms:
+      - DN: "/C=DE/O=GermanGrid/OU=DESY/CN=host/grid-voms.desy.de"
+        CA_DN: "/C=DE/O=GermanGrid/CN=GridKa-CA"
+        hostname: "grid-voms.desy.de"
+        port: "15106"
+  - name: iber.vo.ibergrid.eu
+    voms:
+      - DN: "/C=PT/O=LIPCA/O=LIP/OU=Lisboa/CN=voms01.ncg.ingrid.pt"
+        CA_DN: "/C=PT/O=LIPCA/CN=LIP Certification Authority"
+        hostname: "voms01.ncg.ingrid.pt"
+        port: "40003"
+  - name: icecube
+    voms:
+      - DN: "/C=DE/O=GermanGrid/OU=DESY/CN=host/grid-voms.desy.de"
+        CA_DN: "/C=DE/O=GermanGrid/CN=GridKa-CA"
+        hostname: "grid-voms.desy.de"
+        port: "15106"
+  - name: ilc
+    voms:
+      - DN: "/C=DE/O=GermanGrid/OU=DESY/CN=host/grid-voms.desy.de"
+        CA_DN: "/C=DE/O=GermanGrid/CN=GridKa-CA"
+        hostname: "grid-voms.desy.de"
+        port: "15110"
+  - name: ildg
+    voms:
+      - DN: "/C=DE/O=GermanGrid/OU=DESY/CN=host/grid-voms.desy.de"
+        CA_DN: "/C=DE/O=GermanGrid/CN=GridKa-CA"
+        hostname: "grid-voms.desy.de"
+        port: "15111"
+  - name: imath.cesga.es
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=ES/L=Santiago de Compostela/O=Centro de Supercomputacion de Galicia - CESGA/CN=voms2.egi.cesga.es "
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms2.egi.cesga.es"
+        port: "15100"
+  - name: infngrid
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms-01.pd.infn.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms-01.pd.infn.it"
+        port: "15000"
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms.cnaf.infn.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms.cnaf.infn.it"
+        port: "15000"
+  - name: lhcb
+    voms:
+      - DN: "/DC=ch/DC=cern/OU=computers/CN=lcg-voms2.cern.ch"
+        CA_DN: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority"
+        hostname: "lcg-voms2.cern.ch"
+        port: "15003"
+      - DN: "/DC=ch/DC=cern/OU=computers/CN=voms2.cern.ch"
+        CA_DN: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority"
+        hostname: "voms2.cern.ch"
+        port: "15003"
+  - name: lofar
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=NL/ST=Utrecht/O=SURF B.V./CN=voms1.grid.surfsara.nl"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms.grid.sara.nl"
+        port: "30019"
+  - name: lsgrid
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=NL/ST=Utrecht/O=SURF B.V./CN=voms1.grid.surfsara.nl"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms.grid.sara.nl"
+        port: "30018"
+  - name: moldyngrid
+    voms:
+      - DN: "/DC=org/DC=ugrid/O=hosts/O=KNU/CN=voms.grid.org.ua"
+        CA_DN: "/DC=org/DC=ugrid/CN=UGRID CA G2"
+        hostname: "voms.grid.org.ua"
+        port: "15110"
+  - name: ops
+    voms:
+      - DN: "/DC=ch/DC=cern/OU=computers/CN=ops-auth.cern.ch"
+        CA_DN: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority"
+        hostname: "voms-ops-auth.cern.ch"
+        port: "443"
+  - name: pamela
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms-01.pd.infn.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms-01.pd.infn.it"
+        port: "15013"
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms.cnaf.infn.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms.cnaf.infn.it"
+        port: "15013"
+  - name: pheno
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15011"
+  - name: pvier
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=NL/ST=Utrecht/O=SURF B.V./CN=voms1.grid.surfsara.nl"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms.grid.sara.nl"
+        port: "30000"
+  - name: see
+    voms:
+      - DN: "/C=GR/O=HellasGrid/OU=hellasgrid.gr/CN=voms2.hellasgrid.gr"
+        CA_DN: "/C=GR/O=HellasGrid/OU=Certification Authorities/CN=HellasGrid CA 2016"
+        hostname: "voms2.hellasgrid.gr"
+        port: "15010"
+  - name: snoplus.snolab.ca
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15503"
+  - name: superbvo.org
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/L=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms2.cnaf.infn.it"
+        CA_DN: "/C=GR/O=Hellenic Academic and Research Institutions CA/CN=GEANT TLS RSA 1"
+        hostname: "voms2.cnaf.infn.it"
+        port: "15009"
+  - name: t2k.org
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15003"
+  - name: tut.vo.ibergrid.eu
+    voms:
+      - DN: "/C=PT/O=LIPCA/O=LIP/OU=Lisboa/CN=voms01.ncg.ingrid.pt"
+        CA_DN: "/C=PT/O=LIPCA/CN=LIP Certification Authority"
+        hostname: "voms01.ncg.ingrid.pt"
+        port: "40002"
+  - name: twgrid
+    voms:
+      - DN: "/C=TW/O=AS/OU=GRID/CN=voms.grid.sinica.edu.tw"
+        CA_DN: "/C=TW/O=AS/CN=Academia Sinica Grid Computing Certification Authority Mercury"
+        hostname: "voms.grid.sinica.edu.tw"
+        port: "15010"
+  - name: ukqcd
+    voms:
+      - DN: "/C=DE/O=GermanGrid/OU=DESY/CN=host/grid-voms.desy.de"
+        CA_DN: "/C=DE/O=GermanGrid/CN=GridKa-CA"
+        hostname: "grid-voms.desy.de"
+        port: "15002"
+  - name: virgo
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms-01.pd.infn.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms-01.pd.infn.it"
+        port: "15009"
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms.cnaf.infn.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms.cnaf.infn.it"
+        port: "15009"
+  - name: vo.agata.org
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=FR/ST=Paris/O=Centre national de la recherche scientifique/CN=cclcgvomsli01.in2p3.fr"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "cclcgvomsli01.in2p3.fr"
+        port: "15007"
+  - name: vo.complex-systems.eu
+    voms:
+      - DN: "/C=GR/O=HellasGrid/OU=hellasgrid.gr/CN=voms2.hellasgrid.gr"
+        CA_DN: "/C=GR/O=HellasGrid/OU=Certification Authorities/CN=HellasGrid CA 2016"
+        hostname: "voms2.hellasgrid.gr"
+        port: "15160"
+  - name: vo.cta.in2p3.fr
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=FR/ST=Paris/O=Centre national de la recherche scientifique/CN=cclcgvomsli01.in2p3.fr"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "cclcgvomsli01.in2p3.fr"
+        port: "15008"
+  - name: vo.gear.cern.ch
+    voms:
+      - DN: "/DC=ch/DC=cern/OU=computers/CN=lcg-voms2.cern.ch"
+        CA_DN: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority"
+        hostname: "lcg-voms2.cern.ch"
+        port: "15002"
+  - name: vo.grif.fr
+    voms:
+      - DN: "/O=GRID-FR/C=FR/O=CNRS/OU=LAL/CN=grid12.lal.in2p3.fr"
+        CA_DN: "/C=FR/O=MENESR/OU=GRID-FR/CN=AC GRID-FR Services"
+        hostname: "grid12.lal.in2p3.fr"
+        port: "20001"
+  - name: vo.helio-vo.eu
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15506"
+  - name: vo.hess-experiment.eu
+    voms:
+      - DN: "/O=GRID-FR/C=FR/O=CNRS/OU=LAL/CN=grid12.lal.in2p3.fr"
+        CA_DN: "/C=FR/O=MENESR/OU=GRID-FR/CN=AC GRID-FR Services"
+        hostname: "grid12.lal.in2p3.fr"
+        port: "20021"
+  - name: vo.irfu.cea.fr
+    voms:
+      - DN: "/O=GRID-FR/C=FR/O=CNRS/OU=LAL/CN=grid12.lal.in2p3.fr"
+        CA_DN: "/C=FR/O=MENESR/OU=GRID-FR/CN=AC GRID-FR Services"
+        hostname: "grid12.lal.in2p3.fr"
+        port: "20014"
+  - name: vo.llr.in2p3.fr
+    voms:
+      - DN: "/O=GRID-FR/C=FR/O=CNRS/OU=LAL/CN=grid12.lal.in2p3.fr"
+        CA_DN: "/C=FR/O=MENESR/OU=GRID-FR/CN=AC GRID-FR Services"
+        hostname: "grid12.lal.in2p3.fr"
+        port: "20007"
+  - name: vo.metacentrum.cz
+    voms:
+      - DN: "/DC=cz/DC=cesnet-ca/O=CESNET/CN=voms2.grid.cesnet.cz"
+        CA_DN: "/DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4"
+        hostname: "voms2.grid.cesnet.cz"
+        port: "15007"
+  - name: vo.northgrid.ac.uk
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15018"
+  - name: vo.panda.gsi.de
+    voms:
+      - DN: "/O=GRID-FR/C=FR/O=CNRS/OU=LAL/CN=grid12.lal.in2p3.fr"
+        CA_DN: "/C=FR/O=MENESR/OU=GRID-FR/CN=AC GRID-FR Services"
+        hostname: "grid12.lal.in2p3.fr"
+        port: "20022"
+  - name: vo.scotgrid.ac.uk
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15509"
+  - name: vo.southgrid.ac.uk
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15019"
+  - name: voce
+    voms:
+      - DN: "/DC=cz/DC=cesnet-ca/O=CESNET/CN=voms2.grid.cesnet.cz"
+        CA_DN: "/DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4"
+        hostname: "voms2.grid.cesnet.cz"
+        port: "7001"
+  - name: xfel.eu
+    voms:
+      - DN: "/C=DE/O=GermanGrid/OU=DESY/CN=host/grid-voms.desy.de"
+        CA_DN: "/C=DE/O=GermanGrid/CN=GridKa-CA"
+        hostname: "grid-voms.desy.de"
+        port: "15113"
+  - name: zeus
+    voms:
+      - DN: "/C=DE/O=GermanGrid/OU=DESY/CN=host/grid-voms.desy.de"
+        CA_DN: "/C=DE/O=GermanGrid/CN=GridKa-CA"
+        hostname: "grid-voms.desy.de"
+        port: "15112"
+  - name: bbmri.nl
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=NL/ST=Utrecht/O=SURF B.V./CN=voms1.grid.surfsara.nl"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms.grid.sara.nl"
+        port: "15002"
+  - name: vo.france-grilles.fr
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=FR/L=Paris/O=Centre national de la recherche scientifique/CN=voms-fg.ijclab.in2p3.fr"
+        CA_DN: "/C=GR/O=Hellenic Academic and Research Institutions CA/CN=GEANT TLS RSA 1"
+        hostname: "voms-fg.ijclab.in2p3.fr"
+        port: "443"
+  - name: xenon.biggrid.nl
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=NL/ST=Utrecht/O=SURF B.V./CN=voms1.grid.surfsara.nl"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms.grid.sara.nl"
+        port: "30008"
+  - name: ukmhd.ac.uk
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15041"
+  - name: mice
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15001"
+  - name: vo.landslides.mossaic.org
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15502"
+      - DN: "/C=UK/O=eScience/OU=Oxford/L=OeSC/CN=voms02.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms02.gridpp.ac.uk"
+        port: "15502"
+      - DN: "/C=UK/O=eScience/OU=Imperial/L=Physics/CN=voms03.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms03.gridpp.ac.uk"
+        port: "15502"
+  - name: icarus-exp.org
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=vomsmania.cnaf.infn.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "vomsmania.cnaf.infn.it"
+        port: "15000"
+  - name: gerda.mpg.de
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=vomsmania.cnaf.infn.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "vomsmania.cnaf.infn.it"
+        port: "15002"
+  - name: ipv6.hepix.org
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/L=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms2.cnaf.infn.it"
+        CA_DN: "/C=GR/O=Hellenic Academic and Research Institutions CA/CN=GEANT TLS RSA 1"
+        hostname: "voms2.cnaf.infn.it"
+        port: "15013"
+  - name: vo.ingv.it
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=vomsmania.cnaf.infn.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "vomsmania.cnaf.infn.it"
+        port: "15002"
+  - name: na62.vo.gridpp.ac.uk
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15501"
+  - name: neurogrid.incf.org
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15025"
+  - name: comet.j-parc.jp
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15505"
+  - name: fedcloud.egi.eu
+    voms:
+      - DN: "/DC=cz/DC=cesnet-ca/O=CESNET/CN=voms1.grid.cesnet.cz"
+        CA_DN: "/DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4"
+        hostname: "voms1.grid.cesnet.cz"
+        port: "15002"
+  - name: neiss.org.uk
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15027"
+  - name: epic.vo.gridpp.ac.uk
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15507"
+  - name: lsst
+    voms:
+      - DN: "/DC=org/DC=incommon/C=US/ST=California/O=Stanford University/CN=voms.slac.stanford.edu"
+        CA_DN: "/C=US/O=Internet2/OU=InCommon/CN=InCommon IGTF Server CA"
+        hostname: "voms.slac.stanford.edu"
+        port: "15003"
+  - name: hyperk.org
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15510"
+  - name: cernatschool.org
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15500"
+      - DN: "/C=UK/O=eScience/OU=Oxford/L=OeSC/CN=voms02.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms02.gridpp.ac.uk"
+        port: "15500"
+  - name: projects.nl
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=NL/ST=Utrecht/O=SURF B.V./CN=voms1.grid.surfsara.nl"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms.grid.sara.nl"
+        port: "30028"
+  - name: eiscat.se
+    voms:
+      - DN: "/DC=cz/DC=cesnet-ca/O=CESNET/CN=voms1.grid.cesnet.cz"
+        CA_DN: "/DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4"
+        hostname: "voms1.grid.cesnet.cz"
+        port: "15005"
+      - DN: "/DC=cz/DC=cesnet-ca/O=CESNET/CN=voms2.grid.cesnet.cz"
+        CA_DN: "/DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4"
+        hostname: "voms2.grid.cesnet.cz"
+        port: "15005"
+  - name: calet.org
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Napoli/O=Universita degli Studi di Napoli FEDERICO II/CN=vomsigi-na.unina.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "vomsIGI-NA.unina.it"
+        port: "15006"
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=vomsmania.cnaf.infn.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "vomsmania.cnaf.infn.it"
+        port: "15006"
+  - name: demo.fedcloud.egi.eu
+    voms:
+      - DN: "/DC=cz/DC=cesnet-ca/O=CESNET/CN=voms1.grid.cesnet.cz"
+        CA_DN: "/DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4"
+        hostname: "voms1.grid.cesnet.cz"
+        port: "15008"
+  - name: physiome.lf1.cuni.cz
+    voms:
+      - DN: "/DC=cz/DC=cesnet-ca/O=CESNET/CN=voms1.grid.cesnet.cz"
+        CA_DN: "/DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4"
+        hostname: "voms1.grid.cesnet.cz"
+        port: "15011"
+  - name: highthroughputseq.egi.eu
+    voms:
+      - DN: "/DC=cz/DC=cesnet-ca/O=CESNET/CN=voms1.grid.cesnet.cz"
+        CA_DN: "/DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4"
+        hostname: "voms1.grid.cesnet.cz"
+        port: "15012"
+  - name: eli-np.eu
+    voms:
+      - DN: "/DC=RO/DC=RomanianGRID/O=IFIN-HH/CN=tbit02.nipne.ro"
+        CA_DN: "/DC=RO/DC=RomanianGRID/O=ROSA/OU=Certification Authority/CN=RomanianGRID CA"
+        hostname: "tbit02.nipne.ro"
+        port: "15003"
+  - name: vo.compass.cern.ch
+    voms:
+      - DN: "/DC=ch/DC=cern/OU=computers/CN=lcg-voms2.cern.ch"
+        CA_DN: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority"
+        hostname: "lcg-voms2.cern.ch"
+        port: "15004"
+      - DN: "/DC=ch/DC=cern/OU=computers/CN=voms2.cern.ch"
+        CA_DN: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority"
+        hostname: "voms2.cern.ch"
+        port: "15004"
+  - name: fermilab
+    voms:
+      - DN: "/DC=org/DC=incommon/C=US/ST=Illinois/O=Fermi Forward Discovery Group, LLC/CN=voms1.fnal.gov"
+        CA_DN: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3"
+        hostname: "voms1.fnal.gov"
+        port: "15001"
+      - DN: "/DC=org/DC=incommon/C=US/ST=Illinois/O=Fermi Forward Discovery Group, LLC/CN=voms2.fnal.gov"
+        CA_DN: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3"
+        hostname: "voms2.fnal.gov"
+        port: "15001"
+  - name: gridifin.ro
+    voms:
+      - DN: "/DC=RO/DC=RomanianGRID/O=IFIN-HH/CN=tbit02.nipne.ro"
+        CA_DN: "/DC=RO/DC=RomanianGRID/O=ROSA/OU=Certification Authority/CN=RomanianGRID CA"
+        hostname: "tbit02.nipne.ro"
+        port: "15005"
+  - name: harpo.cea.fr
+    voms:
+      - DN: "/O=GRID-FR/C=FR/O=CNRS/OU=LAL/CN=grid12.lal.in2p3.fr"
+        CA_DN: "/C=FR/O=MENESR/OU=GRID-FR/CN=AC GRID-FR Services"
+        hostname: "grid12.lal.in2p3.fr"
+        port: "20024"
+  - name: juno
+    voms:
+      - DN: "/C=CN/O=HEP/OU=CC/O=IHEP/CN=voms.ihep.ac.cn"
+        CA_DN: "/C=CN/O=HEP/CN=Institute of High Energy Physics Certification Authority"
+        hostname: "voms.ihep.ac.cn"
+        port: "15008"
+  - name: ronbio.ro
+    voms:
+      - DN: "/DC=RO/DC=RomanianGRID/O=IFIN-HH/CN=tbit02.nipne.ro"
+        CA_DN: "/DC=RO/DC=RomanianGRID/O=ROSA/OU=Certification Authority/CN=RomanianGRID CA"
+        hostname: "tbit02.nipne.ro"
+        port: "15004"
+  - name: vo.moedal.org
+    voms:
+      - DN: "/DC=ch/DC=cern/OU=computers/CN=lcg-voms2.cern.ch"
+        CA_DN: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority"
+        hostname: "lcg-voms2.cern.ch"
+        port: "15017"
+      - DN: "/DC=ch/DC=cern/OU=computers/CN=voms2.cern.ch"
+        CA_DN: "/DC=ch/DC=cern/CN=CERN Grid Certification Authority"
+        hostname: "voms2.cern.ch"
+        port: "15017"
+  - name: vo.dirac.ac.uk
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15002"
+  - name: lz
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Oxford/L=OeSC/CN=voms02.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms02.gridpp.ac.uk"
+        port: "15517"
+  - name: vo.elixir-europe.org
+    voms:
+      - DN: "/DC=cz/DC=cesnet-ca/O=CESNET/CN=voms1.grid.cesnet.cz"
+        CA_DN: "/DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4"
+        hostname: "voms1.grid.cesnet.cz"
+        port: "15032"
+  - name: vo.nbis.se
+    voms:
+      - DN: "/DC=cz/DC=cesnet-ca/O=CESNET/CN=voms1.grid.cesnet.cz"
+        CA_DN: "/DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4"
+        hostname: "voms1.grid.cesnet.cz"
+        port: "15033"
+  - name: skatelescope.eu
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15512"
+  - name: vo.indigo-datacloud.eu
+    voms:
+      - DN: "/C=PT/O=LIPCA/O=LIP/OU=Lisboa/CN=voms01.ncg.ingrid.pt"
+        CA_DN: "/C=PT/O=LIPCA/CN=LIP Certification Authority"
+        hostname: "voms01.ncg.ingrid.pt"
+        port: "40101"
+  - name: dune
+    voms:
+      - DN: "/DC=org/DC=incommon/C=US/ST=Illinois/O=Fermi Forward Discovery Group, LLC/CN=voms1.fnal.gov"
+        CA_DN: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3"
+        hostname: "voms1.fnal.gov"
+        port: "15042"
+      - DN: "/DC=org/DC=incommon/C=US/ST=Illinois/O=Fermi Forward Discovery Group, LLC/CN=voms2.fnal.gov"
+        CA_DN: "/C=US/O=Internet2/CN=InCommon RSA IGTF Server CA 3"
+        hostname: "voms2.fnal.gov"
+        port: "15042"
+  - name: vo.padme.org
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/L=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms2.cnaf.infn.it"
+        CA_DN: "/C=GR/O=Hellenic Academic and Research Institutions CA/CN=GEANT TLS RSA 1"
+        hostname: "voms2.cnaf.infn.it"
+        port: "15020"
+  - name: beapps
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=BE/L=Elsene/O=Vrije Universiteit Brussel/CN=voms01.begrid.be"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms01.begrid.be"
+        port: "18004"
+  - name: solidexperiment.org
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15513"
+  - name: vo.emsodev.eu
+    voms:
+      - DN: "/C=GR/O=HellasGrid/OU=hellasgrid.gr/CN=voms2.hellasgrid.gr"
+        CA_DN: "/C=GR/O=HellasGrid/OU=Certification Authorities/CN=HellasGrid CA 2016"
+        hostname: "voms2.hellasgrid.gr"
+        port: "15020"
+  - name: rdfa
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms.cnaf.infn.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms.cnaf.infn.it"
+        port: "15014"
+  - name: vo.darkside.org
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "vomsmania.cnaf.infn.it"
+        port: "15008"
+  - name: vo.nextgeoss.eu
+    voms:
+      - DN: "/DC=cz/DC=cesnet-ca/O=CESNET/CN=voms1.grid.cesnet.cz"
+        CA_DN: "/DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4"
+        hostname: "voms1.grid.cesnet.cz"
+        port: "15036"
+  - name: ericll.org
+    voms:
+      - DN: "/DC=cz/DC=cesnet-ca/O=CESNET/CN=voms1.grid.cesnet.cz"
+        CA_DN: "/DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4"
+        hostname: "voms1.grid.cesnet.cz"
+        port: "15039"
+  - name: mathematical-software
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=ES/L=Santiago de Compostela/O=Centro de Supercomputacion de Galicia - CESGA/CN=voms2.egi.cesga.es "
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms2.egi.cesga.es"
+        port: "15002"
+  - name: vo.clarin.eu
+    voms:
+      - DN: "/DC=cz/DC=cesnet-ca/O=CESNET/CN=voms1.grid.cesnet.cz"
+        CA_DN: "/DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4"
+        hostname: "voms1.grid.cesnet.cz"
+        port: "15040"
+      - DN: "/DC=cz/DC=cesnet-ca/O=CESNET/CN=voms2.grid.cesnet.cz"
+        CA_DN: "/DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 4"
+        hostname: "voms2.grid.cesnet.cz"
+        port: "15040"
+  - name: hidronav.eosc-hub.eu
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=ES/L=Santiago de Compostela/O=Centro de Supercomputacion de Galicia - CESGA/CN=voms2.egi.cesga.es "
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms2.egi.cesga.es"
+        port: "15003"
+  - name: supernemo.org
+    voms:
+      - DN: "/C=UK/O=eScience/OU=Manchester/L=HEP/CN=voms.gridpp.ac.uk"
+        CA_DN: "/C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B"
+        hostname: "voms.gridpp.ac.uk"
+        port: "15515"
+  - name: muoncoll.infn.it
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/ST=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms-02.pd.infn.it"
+        CA_DN: "/C=NL/O=GEANT Vereniging/CN=GEANT eScience SSL CA 4"
+        hostname: "voms-02.pd.infn.it"
+        port: "15022"
+      - DN: "/DC=org/DC=terena/DC=tcs/C=IT/L=Roma/O=Istituto Nazionale di Fisica Nucleare/CN=voms2.cnaf.infn.it"
+        CA_DN: "/C=GR/O=Hellenic Academic and Research Institutions CA/CN=GEANT TLS RSA 1"
+        hostname: "voms2.cnaf.infn.it"
+        port: "15022"
+  - name: vo.scigne.fr
+    voms:
+      - DN: "/DC=org/DC=terena/DC=tcs/C=FR/L=Paris/O=Centre national de la recherche scientifique/CN=voms-scigne.ijclab.in2p3.fr"
+        CA_DN: "/C=GR/O=Hellenic Academic and Research Institutions CA/CN=GEANT TLS RSA 1"
+        hostname: "voms-scigne.ijclab.in2p3.fr"
+        port: "443"
+  - name: mug2ej.kek.jp
+    voms:
+      - DN: "/C=JP/O=KEK/OU=CRC/CN=host/voms.cc.kek.jp"
+        CA_DN: "/C=JP/O=KEK/OU=CRC/CN=KEK GRID Certificate Authority"
+        hostname: "voms.cc.kek.jp"
+        port: "15024"

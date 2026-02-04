@@ -50,3 +50,4 @@
     "{{ vo_voms | json_query(voms_data_query) | subelements('voms') | to_json |
     from_json | json_query('[*].{name: [0].name, hostname: [1].hostname, DN:
     [1].DN, port: [1].port}') }}"
+  when: item.port is defined and item.port not in [None, '']
